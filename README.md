@@ -1,3 +1,9 @@
+# Weather-API-ReactJS
+API test
+<img src="https://github.com/Rufi512/Weather-API-ReactJS/blob/master/Capture.png"/>
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

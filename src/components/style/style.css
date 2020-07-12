@@ -1,0 +1,131 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.icons {
+    width: 64px;
+}
+
+.weather-info {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    transition: all 0.5s;
+}
+
+.weather-head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.weather-head div p {
+    font-size: 36px;
+}
+
+.weather-head p {
+    font-size: 24px;
+}
+
+.weather-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.weather-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.weather-content div {
+    margin: auto;
+}
+
+.bar-form {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #000000bd;
+    transform: translateX(-100%);
+    z-index: 10000;
+}
+
+
+.bar-form form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.bar-form input,
+.bar-form button {
+    margin: 20px 0px;
+}
+
+.bar-form form input {
+    background: none;
+    outline: 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #9E9E9E;
+    color: #e6e6e6;
+}
+
+.bar-form form input:focus {
+    border-bottom: 2px solid #ffd350;
+    transition: all 0.5s ease-in-out;
+}
+
+.bar-form form input::placeholder {
+    color: white;
+}
+
+.bar-form button {
+    background-color: #efefef;
+    border: none;
+    width: 95px;
+    padding: 13px 0px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.error {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    background-color: #B00020;
+    visibility: collapse;
+    margin: auto;
+    bottom: 155px;
+}
+
+.button-show {
+    position: absolute;
+    right: -10px;
+    ;
+}
+
+.button-show input {
+    display: none;
+}
+
+.button-show label {
+    padding: 10px;
+    cursor: pointer;
+}
