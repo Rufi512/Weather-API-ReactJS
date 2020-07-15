@@ -9,6 +9,13 @@ class App extends Component {
     }
 
 
+    closebar() {
+        const bar = document.getElementById("bar");
+        bar.style.transform = 'translateX(-100%)';
+        bar.style.transition = '0.5s all';
+    }
+
+
     constructor() {
         super();
         this.state = {
@@ -116,6 +123,7 @@ class App extends Component {
             <div>
 
     <div id="bar" className="bar-form">
+    <img className="icons-buttons-close" src="src/icons/close.svg" onClick={this.closebar}/>
     <div className="button-show">
   <label id="button-bar" onClick={this.showbar}><img src="src/icons/search-solid.svg"/></label>
   </div>
@@ -130,7 +138,7 @@ placeholder="Place the state code"
 onChange={country => this.setState({searchB: country.target.value})} 
 />
 
-<button className="btn btn-success btn-block" onClick={e=>e.target.value}>
+<button className="btn" onClick={e=>e.target.value}>
                 Get Weather
             </button>
 
@@ -138,9 +146,6 @@ onChange={country => this.setState({searchB: country.target.value})}
 <p className="error" style={{visibility: this.state.vError}} >{this.state.error ? this.state.error: ''}</p>
 
 </div>
-
-   
-
 
         <ViewWeather 
         name={this.state.name}

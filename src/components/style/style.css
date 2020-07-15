@@ -102,6 +102,10 @@ body {
     cursor: pointer;
 }
 
+.bar-form .icons-buttons-close{
+    display: none;
+}
+
 .error {
     position: absolute;
     left: 5px;
@@ -128,4 +132,30 @@ body {
 .button-show label {
     padding: 10px;
     cursor: pointer;
+}
+
+@media(max-width: 512px){
+
+    .bar-form{
+        width: 101%;
+        height: 101%;
+        position: fixed;
+    }
+
+    .bar-form .icons-buttons-close{
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    width: 30px;
+    }
+
+    .weather-info{
+        height: 100%;
+    }
+
+    .weather-content{
+        display: flex;
+        flex-direction: column;
+    }
 }
